@@ -1,0 +1,6 @@
+framework module Pods_howareyouTests {
+  umbrella header "Pods-howareyouTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
