@@ -51,8 +51,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="foG-lm-wU1" kind="presentation" id="mqJ-h3-Rsd"/>
-                        <segue destination="9Nk-jF-ARi" kind="presentation" id="8z5-ti-fdR"/>
+                        <segue destination="foG-lm-wU1" kind="presentation" identifier="registerPageSegue" id="mqJ-h3-Rsd"/>
+                        <segue destination="9Nk-jF-ARi" kind="presentation" identifier="loginPageSegue" id="8z5-ti-fdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,13 +100,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="REGISTER"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDe-VF-hpW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDe-VF-hpW">
                                 <rect key="frame" x="65" y="281" width="38" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-e4-4DR">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-e4-4DR">
                                 <rect key="frame" x="65" y="318" width="284" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -126,9 +126,12 @@
                             <constraint firstItem="JZ6-oU-XDd" firstAttribute="leading" secondItem="osB-g5-oCz" secondAttribute="leading" constant="65" id="P9N-BQ-oXG"/>
                             <constraint firstItem="osB-g5-oCz" firstAttribute="trailing" secondItem="JZ6-oU-XDd" secondAttribute="trailing" constant="65" id="UjH-Gn-viH"/>
                             <constraint firstItem="Jgs-e4-4DR" firstAttribute="top" secondItem="sDe-VF-hpW" secondAttribute="bottom" constant="20" id="bl2-1w-5J9"/>
+                            <constraint firstItem="Jgs-e4-4DR" firstAttribute="leading" secondItem="osB-g5-oCz" secondAttribute="leading" constant="65" id="cpo-PR-KGN"/>
                             <constraint firstItem="4HX-CR-0DV" firstAttribute="top" secondItem="GSS-Hg-XRh" secondAttribute="bottom" constant="20" id="kCr-du-6N3"/>
                             <constraint firstItem="GSS-Hg-XRh" firstAttribute="top" secondItem="Jgs-e4-4DR" secondAttribute="bottom" constant="20" id="kFp-vV-e61"/>
+                            <constraint firstItem="sDe-VF-hpW" firstAttribute="leading" secondItem="osB-g5-oCz" secondAttribute="leading" constant="65" id="lMs-vV-bXm"/>
                             <constraint firstItem="un1-NB-Vt9" firstAttribute="centerX" secondItem="WzC-gc-OfU" secondAttribute="centerX" id="m70-cE-Jq4"/>
+                            <constraint firstItem="osB-g5-oCz" firstAttribute="trailing" secondItem="Jgs-e4-4DR" secondAttribute="trailing" constant="65" id="rHD-3y-D1A"/>
                             <constraint firstItem="4HX-CR-0DV" firstAttribute="leading" secondItem="osB-g5-oCz" secondAttribute="leading" constant="65" id="xyH-LM-QSZ"/>
                             <constraint firstItem="JZ6-oU-XDd" firstAttribute="top" secondItem="dJ8-Jy-owx" secondAttribute="bottom" constant="20" id="ypC-1W-eos"/>
                         </constraints>
@@ -181,6 +184,9 @@
                                 <rect key="frame" x="173.5" y="464.5" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="LOGIN"/>
+                                <connections>
+                                    <action selector="onLogIn:" destination="9Nk-jF-ARi" eventType="touchUpInside" id="iye-Ku-sq8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XXL-sf-RVz"/>
@@ -203,6 +209,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordField" destination="Pkj-lp-WDB" id="avo-G7-5Bw"/>
+                        <outlet property="usernameField" destination="0DR-1i-2NG" id="geX-cf-9lg"/>
                         <segue destination="gSb-W3-BOl" kind="presentation" identifier="loginSegue" id="ogQ-F3-rdZ"/>
                     </connections>
                 </viewController>
@@ -247,7 +255,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ogQ-F3-rdZ"/>
+        <segue reference="Nft-n8-M8I"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
