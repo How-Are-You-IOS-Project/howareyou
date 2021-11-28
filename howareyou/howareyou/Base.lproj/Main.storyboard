@@ -99,6 +99,9 @@
                                 <rect key="frame" x="162" y="559" width="90" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="REGISTER"/>
+                                <connections>
+                                    <action selector="onRegister:" destination="foG-lm-wU1" eventType="touchUpInside" id="VDT-37-ckQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDe-VF-hpW">
                                 <rect key="frame" x="65" y="281" width="38" height="17"/>
@@ -137,6 +140,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nameField" destination="Jgs-e4-4DR" id="bAQ-yP-SYr"/>
+                        <outlet property="passwordField" destination="JZ6-oU-XDd" id="7ku-ON-iWT"/>
+                        <outlet property="usernameField" destination="4HX-CR-0DV" id="R2N-Hk-Cl5"/>
                         <segue destination="gSb-W3-BOl" kind="presentation" identifier="registerSegue" id="Nft-n8-M8I"/>
                     </connections>
                 </viewController>
