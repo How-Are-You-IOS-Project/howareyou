@@ -19,6 +19,7 @@
 		5C09A9732753F2A9009F6C2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A9722753F2A9009F6C2B /* LoginViewController.swift */; };
 		5C09A9772753F2E5009F6C2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A9762753F2E5009F6C2B /* RegisterViewController.swift */; };
 		5C09A97A2753F318009F6C2B /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A9792753F318009F6C2B /* LoginRegisterViewController.swift */; };
+		5C09A97C2753F98F009F6C2B /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A97B2753F98F009F6C2B /* EntryViewController.swift */; };
 		DAB5EBAD48C1C6CE62121571 /* Pods_howareyou_howareyouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE7D26C18C809ADC51E91C1 /* Pods_howareyou_howareyouUITests.framework */; };
 		F289D4101AF0A76137C984FB /* Pods_howareyou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC0520F891B6AD6CB9F1892 /* Pods_howareyou.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		5C09A9722753F2A9009F6C2B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C09A9762753F2E5009F6C2B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5C09A9792753F318009F6C2B /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		5C09A97B2753F98F009F6C2B /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		791C17A65FB27489F13C6F8D /* Pods-howareyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.release.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.release.xcconfig"; sourceTree = "<group>"; };
 		A4436E0AD10EE608293824AC /* Pods-howareyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.debug.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.debug.xcconfig"; sourceTree = "<group>"; };
 		A486DDE0FB8EA02D28CD684D /* Pods_howareyouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howareyouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				5C09A9722753F2A9009F6C2B /* LoginViewController.swift */,
 				5C09A9762753F2E5009F6C2B /* RegisterViewController.swift */,
 				5C09A9792753F318009F6C2B /* LoginRegisterViewController.swift */,
+				5C09A97B2753F98F009F6C2B /* EntryViewController.swift */,
 			);
 			path = howareyou;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				5C09A943274EA327009F6C2B /* AppDelegate.swift in Sources */,
 				5C09A945274EA327009F6C2B /* SceneDelegate.swift in Sources */,
 				5C09A9772753F2E5009F6C2B /* RegisterViewController.swift in Sources */,
+				5C09A97C2753F98F009F6C2B /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
