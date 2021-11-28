@@ -11,7 +11,7 @@
         <!--Login Register View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginRegisterViewController" customModule="howareyou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startPageViewController" id="BYZ-38-t0r" customClass="LoginRegisterViewController" customModule="howareyou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,8 +232,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CREATE ENTRY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-zP-M5z">
-                                <rect key="frame" x="156.5" y="253" width="101" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE ENTRY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-zP-M5z">
+                                <rect key="frame" x="156.5" y="244" width="101" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -252,6 +252,7 @@
                         <constraints>
                             <constraint firstItem="7uN-5K-t1n" firstAttribute="centerX" secondItem="Sis-AK-fuH" secondAttribute="centerX" id="KP1-Mq-4Dl"/>
                             <constraint firstItem="7uN-5K-t1n" firstAttribute="centerY" secondItem="Sis-AK-fuH" secondAttribute="centerY" id="aQg-Bh-Vbc"/>
+                            <constraint firstItem="Dln-zP-M5z" firstAttribute="top" secondItem="t7k-KJ-sEa" secondAttribute="top" constant="200" id="e6z-Jk-wMi"/>
                             <constraint firstItem="Dln-zP-M5z" firstAttribute="centerX" secondItem="Sis-AK-fuH" secondAttribute="centerX" id="ogE-RH-B5M"/>
                         </constraints>
                     </view>
@@ -262,7 +263,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Nft-n8-M8I"/>
+        <segue reference="ogQ-F3-rdZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
