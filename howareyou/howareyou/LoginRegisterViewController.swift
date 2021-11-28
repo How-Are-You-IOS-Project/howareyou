@@ -16,6 +16,13 @@ class LoginRegisterViewController: UIViewController {
     }
     
 
+    @IBAction func toLoginPage(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginPageSegue", sender: nil)
+    }
+    
+    @IBAction func toRegisterPage(_ sender: Any) {
+        self.performSegue(withIdentifier: "registerPageSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 
