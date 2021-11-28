@@ -227,30 +227,31 @@
         <!--Entry View Controller-->
         <scene sceneID="7FG-XW-1RP">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gSb-W3-BOl" customClass="EntryViewController" customModule="howareyou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EntryViewController" modalPresentationStyle="fullScreen" id="gSb-W3-BOl" customClass="EntryViewController" customModule="howareyou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sis-AK-fuH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONi-L4-644">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="QDn-3q-m9m">
-                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Otj-15-RmQ"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CREATE ENTRY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-zP-M5z">
                                 <rect key="frame" x="156.5" y="253" width="101" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uN-5K-t1n">
+                                <rect key="frame" x="166" y="432.5" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LOGOUT"/>
+                                <connections>
+                                    <action selector="onLogoutButton:" destination="gSb-W3-BOl" eventType="touchUpInside" id="36t-vA-Z6m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t7k-KJ-sEa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Dln-zP-M5z" firstAttribute="top" secondItem="ONi-L4-644" secondAttribute="bottom" constant="200" id="Fh3-I5-DSR"/>
+                            <constraint firstItem="7uN-5K-t1n" firstAttribute="centerX" secondItem="Sis-AK-fuH" secondAttribute="centerX" id="KP1-Mq-4Dl"/>
+                            <constraint firstItem="7uN-5K-t1n" firstAttribute="centerY" secondItem="Sis-AK-fuH" secondAttribute="centerY" id="aQg-Bh-Vbc"/>
                             <constraint firstItem="Dln-zP-M5z" firstAttribute="centerX" secondItem="Sis-AK-fuH" secondAttribute="centerX" id="ogE-RH-B5M"/>
                         </constraints>
                     </view>
