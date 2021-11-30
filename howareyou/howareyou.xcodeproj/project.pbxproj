@@ -17,6 +17,9 @@
 		5C09A95A274EA328009F6C2B /* howareyouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A959274EA328009F6C2B /* howareyouTests.swift */; };
 		5C09A964274EA328009F6C2B /* howareyouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A963274EA328009F6C2B /* howareyouUITests.swift */; };
 		5C09A966274EA328009F6C2B /* howareyouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */; };
+		930E63EB275487B100AC2597 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930E63EA275487B100AC2597 /* LoginViewController.swift */; };
+		930E63ED275487C600AC2597 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930E63EC275487C600AC2597 /* EntryViewController.swift */; };
+		93D931932755F598009F39DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D931922755F598009F39DF /* Assets.xcassets */; };
 		DAB5EBAD48C1C6CE62121571 /* Pods_howareyou_howareyouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE7D26C18C809ADC51E91C1 /* Pods_howareyou_howareyouUITests.framework */; };
 		F289D4101AF0A76137C984FB /* Pods_howareyou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC0520F891B6AD6CB9F1892 /* Pods_howareyou.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		5C09A963274EA328009F6C2B /* howareyouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITests.swift; sourceTree = "<group>"; };
 		5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		791C17A65FB27489F13C6F8D /* Pods-howareyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.release.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.release.xcconfig"; sourceTree = "<group>"; };
+		930E63EA275487B100AC2597 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		930E63EC275487C600AC2597 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		93D931922755F598009F39DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Assets.xcassets; sourceTree = "<group>"; };
 		A4436E0AD10EE608293824AC /* Pods-howareyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.debug.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.debug.xcconfig"; sourceTree = "<group>"; };
 		A486DDE0FB8EA02D28CD684D /* Pods_howareyouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howareyouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D517EA253768CE7871472635 /* Pods-howareyouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyouTests.release.xcconfig"; path = "Target Support Files/Pods-howareyouTests/Pods-howareyouTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +107,6 @@
 				236FF79691C22D29DCE764C7 /* Pods-howareyouTests.debug.xcconfig */,
 				D517EA253768CE7871472635 /* Pods-howareyouTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -133,10 +138,13 @@
 				5C09A942274EA327009F6C2B /* AppDelegate.swift */,
 				5C09A944274EA327009F6C2B /* SceneDelegate.swift */,
 				5C09A946274EA327009F6C2B /* ViewController.swift */,
+				93D931922755F598009F39DF /* Assets.xcassets */,
 				5C09A948274EA327009F6C2B /* Main.storyboard */,
 				5C09A94B274EA328009F6C2B /* Assets.xcassets */,
 				5C09A94D274EA328009F6C2B /* LaunchScreen.storyboard */,
 				5C09A950274EA328009F6C2B /* Info.plist */,
+				930E63EA275487B100AC2597 /* LoginViewController.swift */,
+				930E63EC275487C600AC2597 /* EntryViewController.swift */,
 			);
 			path = howareyou;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 			files = (
 				5C09A94F274EA328009F6C2B /* LaunchScreen.storyboard in Resources */,
 				5C09A94C274EA328009F6C2B /* Assets.xcassets in Resources */,
+				93D931932755F598009F39DF /* Assets.xcassets in Resources */,
 				5C09A94A274EA327009F6C2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +416,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930E63EB275487B100AC2597 /* LoginViewController.swift in Sources */,
+				930E63ED275487C600AC2597 /* EntryViewController.swift in Sources */,
 				5C09A947274EA327009F6C2B /* ViewController.swift in Sources */,
 				5C09A943274EA327009F6C2B /* AppDelegate.swift in Sources */,
 				5C09A945274EA327009F6C2B /* SceneDelegate.swift in Sources */,
