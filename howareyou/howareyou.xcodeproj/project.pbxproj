@@ -17,6 +17,8 @@
 		5C09A95A274EA328009F6C2B /* howareyouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A959274EA328009F6C2B /* howareyouTests.swift */; };
 		5C09A964274EA328009F6C2B /* howareyouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A963274EA328009F6C2B /* howareyouUITests.swift */; };
 		5C09A966274EA328009F6C2B /* howareyouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */; };
+		8775BACB275AD944005185F1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BACA275AD944005185F1 /* CustomButton.swift */; };
+		8775BACD275AEBEF005185F1 /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BACC275AEBEF005185F1 /* CustomCard.swift */; };
 		DAB5EBAD48C1C6CE62121571 /* Pods_howareyou_howareyouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE7D26C18C809ADC51E91C1 /* Pods_howareyou_howareyouUITests.framework */; };
 		F289D4101AF0A76137C984FB /* Pods_howareyou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC0520F891B6AD6CB9F1892 /* Pods_howareyou.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		5C09A963274EA328009F6C2B /* howareyouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITests.swift; sourceTree = "<group>"; };
 		5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		791C17A65FB27489F13C6F8D /* Pods-howareyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.release.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.release.xcconfig"; sourceTree = "<group>"; };
+		8775BACA275AD944005185F1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8775BACC275AEBEF005185F1 /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
 		A4436E0AD10EE608293824AC /* Pods-howareyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.debug.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.debug.xcconfig"; sourceTree = "<group>"; };
 		A486DDE0FB8EA02D28CD684D /* Pods_howareyouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howareyouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D517EA253768CE7871472635 /* Pods-howareyouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyouTests.release.xcconfig"; path = "Target Support Files/Pods-howareyouTests/Pods-howareyouTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				236FF79691C22D29DCE764C7 /* Pods-howareyouTests.debug.xcconfig */,
 				D517EA253768CE7871472635 /* Pods-howareyouTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,8 @@
 				5C09A94B274EA328009F6C2B /* Assets.xcassets */,
 				5C09A94D274EA328009F6C2B /* LaunchScreen.storyboard */,
 				5C09A950274EA328009F6C2B /* Info.plist */,
+				8775BACA275AD944005185F1 /* CustomButton.swift */,
+				8775BACC275AEBEF005185F1 /* CustomCard.swift */,
 			);
 			path = howareyou;
 			sourceTree = "<group>";
@@ -407,7 +412,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8775BACB275AD944005185F1 /* CustomButton.swift in Sources */,
 				5C09A947274EA327009F6C2B /* ViewController.swift in Sources */,
+				8775BACD275AEBEF005185F1 /* CustomCard.swift in Sources */,
 				5C09A943274EA327009F6C2B /* AppDelegate.swift in Sources */,
 				5C09A945274EA327009F6C2B /* SceneDelegate.swift in Sources */,
 			);
@@ -589,6 +596,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CB5PWX554V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = howareyou/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -617,6 +625,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CB5PWX554V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = howareyou/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
