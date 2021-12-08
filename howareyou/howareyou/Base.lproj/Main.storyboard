@@ -131,7 +131,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82z-KV-1Qm">
-                                <rect key="frame" x="304" y="60" width="90" height="47"/>
+                                <rect key="frame" x="304" y="100" width="90" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="AHy-v6-mzj"/>
                                     <constraint firstAttribute="width" constant="90" id="W5d-r5-xv9"/>
@@ -156,9 +156,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DQa-ZA-e7n" firstAttribute="centerY" secondItem="8L6-q1-uEP" secondAttribute="centerY" constant="-45.5" id="1IL-Gq-gTo"/>
+                            <constraint firstItem="82z-KV-1Qm" firstAttribute="top" secondItem="8L6-q1-uEP" secondAttribute="top" constant="100" id="9V5-xy-whE"/>
                             <constraint firstItem="s1t-Hg-Ttc" firstAttribute="centerX" secondItem="8L6-q1-uEP" secondAttribute="centerX" id="FaQ-pX-wkM"/>
                             <constraint firstItem="s1t-Hg-Ttc" firstAttribute="top" secondItem="DQa-ZA-e7n" secondAttribute="bottom" constant="8" id="LSb-G7-aL1"/>
-                            <constraint firstItem="82z-KV-1Qm" firstAttribute="top" secondItem="8L6-q1-uEP" secondAttribute="top" constant="60" id="Qli-wi-Rtb"/>
                             <constraint firstItem="DQa-ZA-e7n" firstAttribute="centerX" secondItem="8L6-q1-uEP" secondAttribute="centerX" id="VZI-27-Wj8"/>
                             <constraint firstItem="7kH-xr-oqq" firstAttribute="trailing" secondItem="82z-KV-1Qm" secondAttribute="trailing" constant="20" id="aJJ-5T-vf9"/>
                         </constraints>
