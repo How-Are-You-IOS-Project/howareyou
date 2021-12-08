@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fix-ig-vlZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Register View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="howareyou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRegisterViewController" id="BYZ-38-t0r" customClass="LoginRegisterViewController" customModule="howareyou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,10 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="toLoginPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQw-kO-QgJ"/>
+                                    <segue destination="eMK-fi-rlZ" kind="presentation" identifier="loginPageSegue" id="igj-1Y-vK1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOB-L3-0RZ" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
                                 <rect key="frame" x="143" y="457" width="128" height="47"/>
@@ -55,6 +59,10 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="toRegisterPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibB-Fx-5o7"/>
+                                    <segue destination="lvN-CT-dRx" kind="presentation" identifier="registerPageSegue" id="7jl-A3-WqQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -599,17 +607,17 @@
             <objects>
                 <viewController id="eMK-fi-rlZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbG-Wu-SeK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME BACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-Gt-rA3">
-                                <rect key="frame" x="87" y="274" width="240" height="36"/>
+                                <rect key="frame" x="87" y="230" width="240" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-up-qbQ" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="79" y="370" width="256" height="47"/>
+                                <rect key="frame" x="79" y="326" width="256" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="5kO-gp-NN8"/>
                                     <constraint firstAttribute="height" constant="47" id="ksR-9G-OPP"/>
@@ -625,7 +633,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW5-aE-2i8" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="79" y="467" width="256" height="47"/>
+                                <rect key="frame" x="79" y="423" width="256" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="IRn-TY-XFa"/>
                                     <constraint firstAttribute="width" constant="256" id="a77-qe-jzj"/>
@@ -641,19 +649,19 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtJ-tq-9mn">
-                                <rect key="frame" x="79" y="335" width="98" height="27"/>
+                                <rect key="frame" x="79" y="291" width="98" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9l-O9-rEI">
-                                <rect key="frame" x="79" y="432" width="92" height="27"/>
+                                <rect key="frame" x="79" y="388" width="92" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M4-wq-EAo" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="143" y="544" width="128" height="47"/>
+                                <rect key="frame" x="143" y="500" width="128" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Fwi-mO-q4H"/>
                                     <constraint firstAttribute="width" constant="128" id="RPt-hZ-svl"/>
@@ -697,11 +705,11 @@
             <objects>
                 <viewController id="lvN-CT-dRx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8tQ-RX-VSN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-6K-NQo">
-                                <rect key="frame" x="93" y="238" width="228" height="72"/>
+                                <rect key="frame" x="93" y="194" width="228" height="72"/>
                                 <string key="text">GLAD TO HAVE 
 YOU ONBOARD!</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -709,7 +717,7 @@ YOU ONBOARD!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZy-JW-04a" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="79" y="370" width="256" height="47"/>
+                                <rect key="frame" x="79" y="326" width="256" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="hxZ-Xz-r7n"/>
                                     <constraint firstAttribute="width" constant="256" id="oHM-bt-a8Q"/>
@@ -725,7 +733,7 @@ YOU ONBOARD!</string>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcu-sy-Snc" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="79" y="467" width="256" height="47"/>
+                                <rect key="frame" x="79" y="423" width="256" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="dGN-vh-sjo"/>
                                     <constraint firstAttribute="width" constant="256" id="wIq-eW-XdJ"/>
@@ -741,19 +749,19 @@ YOU ONBOARD!</string>
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMT-Yt-DhM">
-                                <rect key="frame" x="79" y="335" width="98" height="27"/>
+                                <rect key="frame" x="79" y="291" width="98" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNh-zp-NJX">
-                                <rect key="frame" x="79" y="432" width="92" height="27"/>
+                                <rect key="frame" x="79" y="388" width="92" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cc-bV-aIl" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="143" y="544" width="128" height="47"/>
+                                <rect key="frame" x="143" y="500" width="128" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="bBt-XC-NB5"/>
                                     <constraint firstAttribute="height" constant="47" id="vhh-TD-8mr"/>

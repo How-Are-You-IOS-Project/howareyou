@@ -17,6 +17,7 @@
 		5C09A95A274EA328009F6C2B /* howareyouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A959274EA328009F6C2B /* howareyouTests.swift */; };
 		5C09A964274EA328009F6C2B /* howareyouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A963274EA328009F6C2B /* howareyouUITests.swift */; };
 		5C09A966274EA328009F6C2B /* howareyouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */; };
+		5C09A97E27604A0C009F6C2B /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A97D27604A0C009F6C2B /* LoginRegisterViewController.swift */; };
 		8775BACB275AD944005185F1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BACA275AD944005185F1 /* CustomButton.swift */; };
 		8775BACD275AEBEF005185F1 /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BACC275AEBEF005185F1 /* CustomCard.swift */; };
 		DAB5EBAD48C1C6CE62121571 /* Pods_howareyou_howareyouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE7D26C18C809ADC51E91C1 /* Pods_howareyou_howareyouUITests.framework */; };
@@ -59,6 +60,7 @@
 		5C09A95F274EA328009F6C2B /* howareyouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = howareyouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C09A963274EA328009F6C2B /* howareyouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITests.swift; sourceTree = "<group>"; };
 		5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C09A97D27604A0C009F6C2B /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRegisterViewController.swift; path = howareyou/LoginRegisterViewController.swift; sourceTree = SOURCE_ROOT; };
 		791C17A65FB27489F13C6F8D /* Pods-howareyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.release.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.release.xcconfig"; sourceTree = "<group>"; };
 		8775BACA275AD944005185F1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8775BACC275AEBEF005185F1 /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				5C09A950274EA328009F6C2B /* Info.plist */,
 				8775BACA275AD944005185F1 /* CustomButton.swift */,
 				8775BACC275AEBEF005185F1 /* CustomCard.swift */,
+				5C09A97D27604A0C009F6C2B /* LoginRegisterViewController.swift */,
 			);
 			path = howareyou;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				8775BACB275AD944005185F1 /* CustomButton.swift in Sources */,
 				5C09A947274EA327009F6C2B /* ViewController.swift in Sources */,
 				8775BACD275AEBEF005185F1 /* CustomCard.swift in Sources */,
+				5C09A97E27604A0C009F6C2B /* LoginRegisterViewController.swift in Sources */,
 				5C09A943274EA327009F6C2B /* AppDelegate.swift in Sources */,
 				5C09A945274EA327009F6C2B /* SceneDelegate.swift in Sources */,
 			);
