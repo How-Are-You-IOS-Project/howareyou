@@ -10,7 +10,6 @@
 		364441236998EDCA4CDFBC43 /* Pods_howareyouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A486DDE0FB8EA02D28CD684D /* Pods_howareyouTests.framework */; };
 		5C09A943274EA327009F6C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A942274EA327009F6C2B /* AppDelegate.swift */; };
 		5C09A945274EA327009F6C2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A944274EA327009F6C2B /* SceneDelegate.swift */; };
-		5C09A947274EA327009F6C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A946274EA327009F6C2B /* ViewController.swift */; };
 		5C09A94A274EA327009F6C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C09A948274EA327009F6C2B /* Main.storyboard */; };
 		5C09A94C274EA328009F6C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C09A94B274EA328009F6C2B /* Assets.xcassets */; };
 		5C09A94F274EA328009F6C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C09A94D274EA328009F6C2B /* LaunchScreen.storyboard */; };
@@ -21,6 +20,10 @@
 		5C09A98227604C7B009F6C2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A98127604C7B009F6C2B /* LoginViewController.swift */; };
 		5C09A98327604C7B009F6C2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A98127604C7B009F6C2B /* LoginViewController.swift */; };
 		5C09A98427604C7B009F6C2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A98127604C7B009F6C2B /* LoginViewController.swift */; };
+		5C09A986276055F4009F6C2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A985276055F4009F6C2B /* RegisterViewController.swift */; };
+		5C09A987276055F4009F6C2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A985276055F4009F6C2B /* RegisterViewController.swift */; };
+		5C09A988276055F4009F6C2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A985276055F4009F6C2B /* RegisterViewController.swift */; };
+		5C5DB75727605CA5008A3D1E /* EntryStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DB75627605CA5008A3D1E /* EntryStartViewController.swift */; };
 		8775BACB275AD944005185F1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BACA275AD944005185F1 /* CustomButton.swift */; };
 		8775BACD275AEBEF005185F1 /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BACC275AEBEF005185F1 /* CustomCard.swift */; };
 		DAB5EBAD48C1C6CE62121571 /* Pods_howareyou_howareyouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE7D26C18C809ADC51E91C1 /* Pods_howareyou_howareyouUITests.framework */; };
@@ -53,7 +56,6 @@
 		5C09A93F274EA327009F6C2B /* howareyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howareyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C09A942274EA327009F6C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C09A944274EA327009F6C2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C09A946274EA327009F6C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C09A949274EA327009F6C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C09A94B274EA328009F6C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C09A94E274EA328009F6C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,8 @@
 		5C09A965274EA328009F6C2B /* howareyouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howareyouUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5C09A97D27604A0C009F6C2B /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRegisterViewController.swift; path = howareyou/LoginRegisterViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C09A98127604C7B009F6C2B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5C09A985276055F4009F6C2B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5C5DB75627605CA5008A3D1E /* EntryStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryStartViewController.swift; sourceTree = "<group>"; };
 		791C17A65FB27489F13C6F8D /* Pods-howareyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howareyou.release.xcconfig"; path = "Target Support Files/Pods-howareyou/Pods-howareyou.release.xcconfig"; sourceTree = "<group>"; };
 		8775BACA275AD944005185F1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8775BACC275AEBEF005185F1 /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
@@ -141,7 +145,6 @@
 			children = (
 				5C09A942274EA327009F6C2B /* AppDelegate.swift */,
 				5C09A944274EA327009F6C2B /* SceneDelegate.swift */,
-				5C09A946274EA327009F6C2B /* ViewController.swift */,
 				5C09A948274EA327009F6C2B /* Main.storyboard */,
 				5C09A94B274EA328009F6C2B /* Assets.xcassets */,
 				5C09A94D274EA328009F6C2B /* LaunchScreen.storyboard */,
@@ -150,6 +153,8 @@
 				8775BACC275AEBEF005185F1 /* CustomCard.swift */,
 				5C09A97D27604A0C009F6C2B /* LoginRegisterViewController.swift */,
 				5C09A98127604C7B009F6C2B /* LoginViewController.swift */,
+				5C09A985276055F4009F6C2B /* RegisterViewController.swift */,
+				5C5DB75627605CA5008A3D1E /* EntryStartViewController.swift */,
 			);
 			path = howareyou;
 			sourceTree = "<group>";
@@ -420,9 +425,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5DB75727605CA5008A3D1E /* EntryStartViewController.swift in Sources */,
 				5C09A98227604C7B009F6C2B /* LoginViewController.swift in Sources */,
 				8775BACB275AD944005185F1 /* CustomButton.swift in Sources */,
-				5C09A947274EA327009F6C2B /* ViewController.swift in Sources */,
+				5C09A986276055F4009F6C2B /* RegisterViewController.swift in Sources */,
 				8775BACD275AEBEF005185F1 /* CustomCard.swift in Sources */,
 				5C09A97E27604A0C009F6C2B /* LoginRegisterViewController.swift in Sources */,
 				5C09A943274EA327009F6C2B /* AppDelegate.swift in Sources */,
@@ -434,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C09A987276055F4009F6C2B /* RegisterViewController.swift in Sources */,
 				5C09A98327604C7B009F6C2B /* LoginViewController.swift in Sources */,
 				5C09A95A274EA328009F6C2B /* howareyouTests.swift in Sources */,
 			);
@@ -446,6 +453,7 @@
 				5C09A98427604C7B009F6C2B /* LoginViewController.swift in Sources */,
 				5C09A966274EA328009F6C2B /* howareyouUITestsLaunchTests.swift in Sources */,
 				5C09A964274EA328009F6C2B /* howareyouUITests.swift in Sources */,
+				5C09A988276055F4009F6C2B /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
