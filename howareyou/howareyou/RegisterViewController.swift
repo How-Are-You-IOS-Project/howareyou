@@ -2,7 +2,7 @@
 //  RegisterViewController.swift
 //  howareyou
 //
-//  Created by Meng-Chuan Chang on 11/28/21.
+//  Created by Meng-Chuan Chang on 12/7/21.
 //
 
 import UIKit
@@ -10,6 +10,7 @@ import Parse
 
 class RegisterViewController: UIViewController {
 
+//    nameField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -22,10 +23,12 @@ class RegisterViewController: UIViewController {
     @IBAction func onRegister(_ sender: Any) {
         let user = PFUser()
         
+//        user["name"] = nameField.text
         user.username = usernameField.text
         user.password = passwordField.text
         
-
+//        print(user.username ?? "No username input")
+//        print(user.password ?? "No password input")
         
         user.signUpInBackground { (success, error) in
             if success {
@@ -35,6 +38,7 @@ class RegisterViewController: UIViewController {
             }
         }
     }
+
     
     /*
     // MARK: - Navigation

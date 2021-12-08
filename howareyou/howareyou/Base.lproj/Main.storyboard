@@ -669,7 +669,7 @@
                                     <constraint firstAttribute="height" constant="47" id="ACm-qe-IEo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h6c-SM-AdJ"/>
@@ -743,6 +743,9 @@ YOU ONBOARD!</string>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onRegister:" destination="lvN-CT-dRx" eventType="touchUpInside" id="Pa5-OY-IJA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-Yw-MIM">
                                 <rect key="frame" x="79" y="370" width="256" height="47"/>
@@ -760,7 +763,7 @@ YOU ONBOARD!</string>
                                     <constraint firstAttribute="height" constant="47" id="x9V-5r-1bM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NWQ-pJ-0oA"/>
@@ -781,8 +784,9 @@ YOU ONBOARD!</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordField" destination="E6C-1L-WIN" id="3QK-2O-sNa"/>
-                        <outlet property="usernameField" destination="UA7-Yw-MIM" id="Bhg-Bl-dO0"/>
+                        <outlet property="passwordField" destination="E6C-1L-WIN" id="WGI-ES-WRK"/>
+                        <outlet property="usernameField" destination="E6C-1L-WIN" id="3gY-V5-Nm4"/>
+                        <segue destination="rqp-jn-KdI" kind="presentation" identifier="registerSegue" id="09Y-GM-06L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tq6-Ss-d3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -809,6 +813,9 @@ YOU ONBOARD!</string>
             <point key="canvasLocation" x="847.82608695652175" y="799.55357142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dBP-3t-WV8"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Blushed Smiling Emoji  1" width="50" height="50"/>
         <image name="Confounded Emoji " width="50" height="50"/>
