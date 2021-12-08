@@ -10,7 +10,7 @@ import Parse
 
 class RegisterViewController: UIViewController {
 
-//    nameField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -23,7 +23,7 @@ class RegisterViewController: UIViewController {
     @IBAction func onRegister(_ sender: Any) {
         let user = PFUser()
         
-//        user["name"] = nameField.text
+        user["name"] = nameField.text
         user.username = usernameField.text
         user.password = passwordField.text
         

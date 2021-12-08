@@ -164,6 +164,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wTT-Yr-faS"/>
+                    <connections>
+                        <outlet property="nameField" destination="DQa-ZA-e7n" id="p9u-Xf-tlD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnT-8j-fYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -716,19 +719,19 @@ YOU ONBOARD!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMT-Yt-DhM">
-                                <rect key="frame" x="79" y="335" width="98" height="27"/>
+                                <rect key="frame" x="79" y="432" width="98" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNh-zp-NJX">
-                                <rect key="frame" x="79" y="432" width="92" height="27"/>
+                                <rect key="frame" x="79" y="529" width="92" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cc-bV-aIl" customClass="CustomButton" customModule="howareyou" customModuleProvider="target">
-                                <rect key="frame" x="143" y="544" width="128" height="47"/>
+                                <rect key="frame" x="143" y="641" width="128" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="bBt-XC-NB5"/>
                                     <constraint firstAttribute="height" constant="47" id="vhh-TD-8mr"/>
@@ -748,7 +751,7 @@ YOU ONBOARD!</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-Yw-MIM">
-                                <rect key="frame" x="79" y="370" width="256" height="47"/>
+                                <rect key="frame" x="79" y="467" width="256" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="51U-3O-tZo"/>
                                     <constraint firstAttribute="height" constant="47" id="wJM-WV-kOy"/>
@@ -757,7 +760,7 @@ YOU ONBOARD!</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6C-1L-WIN">
-                                <rect key="frame" x="79" y="467" width="256" height="47"/>
+                                <rect key="frame" x="79" y="564" width="256" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="j4K-yb-UZ0"/>
                                     <constraint firstAttribute="height" constant="47" id="x9V-5r-1bM"/>
@@ -765,25 +768,45 @@ YOU ONBOARD!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ih-of-Ji0">
+                                <rect key="frame" x="79" y="335" width="56.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjl-kL-IeH">
+                                <rect key="frame" x="79" y="370" width="256" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="7Mm-GT-UgV"/>
+                                    <constraint firstAttribute="height" constant="47" id="toT-7m-RZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NWQ-pJ-0oA"/>
                         <color key="backgroundColor" red="0.79215681550000006" green="0.6784313917" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="UA7-Yw-MIM" firstAttribute="centerX" secondItem="8tQ-RX-VSN" secondAttribute="centerX" id="CAb-3i-4IN"/>
+                            <constraint firstItem="bjl-kL-IeH" firstAttribute="top" secondItem="5ih-of-Ji0" secondAttribute="bottom" constant="8" id="Hzk-c3-BWB"/>
                             <constraint firstItem="6cc-bV-aIl" firstAttribute="centerX" secondItem="8tQ-RX-VSN" secondAttribute="centerX" id="M23-Rw-6tl"/>
                             <constraint firstItem="E6C-1L-WIN" firstAttribute="centerX" secondItem="8tQ-RX-VSN" secondAttribute="centerX" id="OOR-lK-MLQ"/>
                             <constraint firstItem="E6C-1L-WIN" firstAttribute="leading" secondItem="xNh-zp-NJX" secondAttribute="leading" id="PjW-Uc-Rid"/>
                             <constraint firstItem="E6C-1L-WIN" firstAttribute="top" secondItem="xNh-zp-NJX" secondAttribute="bottom" constant="8" id="Rhh-dq-ot5"/>
+                            <constraint firstItem="bjl-kL-IeH" firstAttribute="centerX" secondItem="8tQ-RX-VSN" secondAttribute="centerX" id="Tr0-gt-vt6"/>
                             <constraint firstItem="XxY-6K-NQo" firstAttribute="centerX" secondItem="8tQ-RX-VSN" secondAttribute="centerX" id="UCv-EY-sSI"/>
+                            <constraint firstItem="TMT-Yt-DhM" firstAttribute="top" secondItem="bjl-kL-IeH" secondAttribute="bottom" constant="15" id="Vqa-Tm-jdS"/>
                             <constraint firstItem="UA7-Yw-MIM" firstAttribute="leading" secondItem="TMT-Yt-DhM" secondAttribute="leading" id="ZYc-TH-iMp"/>
                             <constraint firstItem="XxY-6K-NQo" firstAttribute="top" secondItem="NWQ-pJ-0oA" secondAttribute="top" constant="194" id="bcq-Ys-2Jd"/>
                             <constraint firstItem="xNh-zp-NJX" firstAttribute="top" secondItem="UA7-Yw-MIM" secondAttribute="bottom" constant="15" id="gIc-UT-w7u"/>
                             <constraint firstItem="6cc-bV-aIl" firstAttribute="top" secondItem="E6C-1L-WIN" secondAttribute="bottom" constant="30" id="n6d-eJ-6pu"/>
                             <constraint firstItem="UA7-Yw-MIM" firstAttribute="top" secondItem="TMT-Yt-DhM" secondAttribute="bottom" constant="8" id="oG9-QU-dSi"/>
-                            <constraint firstItem="TMT-Yt-DhM" firstAttribute="top" secondItem="XxY-6K-NQo" secondAttribute="bottom" constant="25" id="wMf-2U-HYL"/>
+                            <constraint firstItem="bjl-kL-IeH" firstAttribute="leading" secondItem="5ih-of-Ji0" secondAttribute="leading" id="pZb-Bg-XSN"/>
+                            <constraint firstItem="5ih-of-Ji0" firstAttribute="top" secondItem="XxY-6K-NQo" secondAttribute="bottom" constant="25" id="ubM-OH-VrQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nameField" destination="bjl-kL-IeH" id="7Wp-v3-IAW"/>
                         <outlet property="passwordField" destination="E6C-1L-WIN" id="WGI-ES-WRK"/>
                         <outlet property="usernameField" destination="E6C-1L-WIN" id="3gY-V5-Nm4"/>
                         <segue destination="rqp-jn-KdI" kind="presentation" identifier="registerSegue" id="09Y-GM-06L"/>
@@ -814,7 +837,7 @@ YOU ONBOARD!</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dBP-3t-WV8"/>
+        <segue reference="09Y-GM-06L"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Blushed Smiling Emoji  1" width="50" height="50"/>

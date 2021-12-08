@@ -10,10 +10,13 @@ import Parse
 
 class EntryStartViewController: UIViewController {
 
+    @IBOutlet weak var nameField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        let userName = PFUser.current()!["name"] as? String ?? "user"
+        self.nameField.text = "Hi " + userName + ","
     }
     
     @IBAction func onLogout(_ sender: Any) {
